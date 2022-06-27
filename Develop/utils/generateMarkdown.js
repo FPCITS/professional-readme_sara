@@ -81,5 +81,4 @@ function generateMarkdown(data) {
   return markdown;
 }  
 
-
 module.exports = generateMarkdown;

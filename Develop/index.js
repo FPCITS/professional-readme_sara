@@ -2,8 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require ('util');
-const generateMArkdown =
-require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -80,7 +79,7 @@ const questions = [{
     {
         type: 'input',
         name: 'confirmContribution',
-        message: 'Confirm other developers are able to contribute to your repository.'
+        message: 'Confirm how other developers are able to contribute to your repository.'
     },
     {
         type: 'input',
@@ -115,7 +114,7 @@ const questions = [{
         type: 'checkbox',
         name: 'license',
         message: 'Please choose a license.',
-        choices: ['Mozilla Public License 2.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'MIT License', 'Apache License 2.0', 'Boost Software License 1.0','The Unlicense'],
+        choices: ['Mozilla Public License 2.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'MIT License', 'Apache License 2.0', 'Boost Software License 1.0','None'],
     validate: nameInput => {
         if (nameInput) {
             return true;
@@ -180,7 +179,7 @@ function writeToFile(fileName, data) {
 async function init() {
     try {
         const userAnswers = await inquirer.prompt(questions);
-console.log('Thank you! The current data is being processed into your README.md: ', userAnswers);
+console.log('Thank you! The data is being processed into your README.md file: ', userAnswers);
 const myMarkdown = generateMarkdown(userAnswers);
 console.log(myMarkdown);
 await createReadMe('README1.md', myMarkdown);
