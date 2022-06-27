@@ -62,7 +62,7 @@ const questions = [{
     {
         type: 'input',
         name: 'instructions',
-        message: 'List instructions for using the application. Be sure to add images as well.'
+        message: 'List instructions for using the application. Be sure to add images as well.',
         when: ({ confirmUsage }) => {
             if (confirmUsage) {
                 return true;
@@ -140,16 +140,57 @@ const questions = [{
 
     },
     {
-        
-    }
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address? (Required)',
+        validate: nameInput => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log('Please enter in your email address.');
+            return false;   
+            
+          }
+        }
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Please list instructions for those who wish to contact you.',
+        validate: (nameInput) => {
+          if (nameInput) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }];
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, error => {
+        if (error) {
+            return console.log ('There was an error :' + error);
+        }
+    })
+}
 
 // // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    try {
+        const userAnswers = await inquirer.prompt(questions);
+console.log('Thank you! The current data is being processed into your README.md: ', userAnswers);
+const myMarkdown = generateMarkdown(userAnswers);
+console.log(myMarkdown);
+await createReadMe('README1.md', myMarkdown);
+
+} catch (error) {
+    console.log('Sorry there was an error.' + error);
+
+    }
+};
 
 // // Function call to initialize app
-init()
+init();
 
