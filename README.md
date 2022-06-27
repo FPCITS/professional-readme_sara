@@ -22,8 +22,13 @@ This project is to demonstrate our ability in utilizing node.js to create a READ
 
  Step 1: Copy repository from GitHub onto your device: https://github.com/FPCITS/professional-readme_sara <br>
  Step 2: Launch your terminal. <br>
- Step 3: Navigate to the directory containing your .js file. <br>
- Step 4: Run your file using the "node index.js" command.
+ Step 3: Run npm install for the following dependencies in your CLI or terminal:<br>
+- Inquirer<br>
+- fs<br>
+- Util <br><br>
+ Step 4: Navigate to the directory containing your .js file. <br>
+ Step 5: Run your file using the "node index.js" command.
+
       
 ## Usage
 
