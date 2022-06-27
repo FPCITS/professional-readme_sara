@@ -26,7 +26,7 @@ const questions = [{
     name: 'description',
     message: 'What is the description of your repository?',
     validate: nameInput => {
-        if (nameInput){
+        if (nameInput) {
             return true;
         } else {
             console.log('Enter a description of the repository.');
@@ -74,12 +74,7 @@ const questions = [{
     {
         type: 'confirm',
         name: 'confirmContribution',
-        message: 'May other developers contribute to your repository?'
-    },
-    {
-        type: 'input',
-        name: 'confirmContribution',
-        message: 'Confirm how other developers are able to contribute to your repository.'
+        message: 'Can other developers contribute to your repository?'
     },
     {
         type: 'input',
@@ -180,7 +175,7 @@ const createReadMe = util.promisify(writeToFile);
 async function init() {
     try {
         const userAnswers = await inquirer.prompt(questions);
-console.log('Thank you! The data is being processed into your README.md file: ', userAnswers);
+console.log('Thanks! The data is being processed into your README.md file: ', userAnswers);
 const myMarkdown = generateMarkdown(userAnswers);
 console.log(myMarkdown);
 await createReadMe('READMESample.md', myMarkdown);

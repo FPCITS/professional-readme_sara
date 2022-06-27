@@ -20,9 +20,10 @@ This project is to demonstrate our ability in utilizing node.js to create a READ
     
   Follow these steps to install or run this application:
 
- Step 1: Launch your terminal. <br>
- Step 2: Navigate to the directory containing your .js file. <br>
- Step 3: Run your file using the "node index.js" command.
+ Step 1: Copy repository from GitHub onto your device: https://github.com/FPCITS/professional-readme_sara <br>
+ Step 2: Launch your terminal. <br>
+ Step 3: Navigate to the directory containing your .js file. <br>
+ Step 4: Run your file using the "node index.js" command.
       
 ## Usage
 
@@ -36,9 +37,10 @@ You can contribute to this project by:
       
 ## Testing
 
- Step 1: Launch your terminal. <br>
- Step 2: Navigate to the directory containing your .js file. <br>
- Step 3: Run your file using the "node index.js" command.
+ Step 1: Copy repository from GitHub onto your device: https://github.com/FPCITS/professional-readme_sara <br>
+ Step 2: Launch your terminal. <br>
+ Step 3: Navigate to the directory containing your .js file. <br>
+ Step 4: Run your file using the "node index.js" command.
       
 ## Questions
       
