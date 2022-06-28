@@ -20,7 +20,7 @@ This project is to demonstrate our ability in utilizing node.js to create a READ
     
   Follow these steps to install or run this application:
 
- Step 1: Copy repository from GitHub onto your device: https://github.com/FPCITS/professional-readme_sara <br>
+ Step 1: Copy repository from GitHub onto your device <br>
  Step 2: Launch your terminal. <br>
  Step 3: Run npm install for the following dependencies in your CLI or terminal:<br>
 - Inquirer<br>
@@ -32,7 +32,11 @@ This project is to demonstrate our ability in utilizing node.js to create a READ
       
 ## Usage
 
-  Here is a helpful video to follow: 
+ [HERE]() is a helpful video to follow: 
+
+  
+  ![image](./Develop/images/Walkthrough.gif)
+
       
 ## Contribution
 
@@ -42,7 +46,7 @@ You can contribute to this project by:
       
 ## Testing
 
- Step 1: Copy repository from GitHub onto your device: https://github.com/FPCITS/professional-readme_sara <br>
+ Step 1: Copy repository from GitHub onto your device <br>
  Step 2: Launch your terminal. <br>
  Step 3: Navigate to the directory containing your .js file. <br>
  Step 4: Run your file using the "node index.js" command.

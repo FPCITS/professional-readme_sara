@@ -1,5 +1,5 @@
-# THIS IS A TEST REPOSITORY NAME
-![License Badge](https://shields.io/badge/license-MIT License-green)
+# huhuh
+![License Badge](https://shields.io/badge/license-GNU LGPLv3-green)
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
@@ -10,18 +10,18 @@
 7. [Questions](#questions)
 
 ## Description
-Short description will go here
+jjj
 ## Installation
-Steps 1-5 
-## Usage
 undefined
+## Usage
+
 ## Contributing
-Reporting bugs or possible features.
+
 ## Tests
 undefined
 ## License
 Please see  to get detailed information for this license
 
 ## Questions
-You can find me [HERE](https://github.com/fpcits) on Github
-You can email me at fpcits@gmail.com if you have any additional questions.
+You can find me [HERE](https://github.com/jj) on Github
+You can email me at jjjn if you have any additional questions.
